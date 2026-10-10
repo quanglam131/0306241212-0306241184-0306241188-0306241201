@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sổ ghi chú</title>
+    <script>
+      // Ap theme/mau da luu lan truoc ngay luc tai trang de khong bi nhap nhay sang-toi.
+      // (Nguon su that van la file profile.json o Backend; day chi la bo nho dem hien thi.)
+      try {
+        var c = JSON.parse(localStorage.getItem('ui-cache') || 'null');
+        if (c) {
+          document.documentElement.dataset.theme = c.theme;
+          document.documentElement.style.setProperty('--primary', c.primaryColor);
+          document.documentElement.style.setProperty('--on-primary', c.onPrimary);
+        }
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

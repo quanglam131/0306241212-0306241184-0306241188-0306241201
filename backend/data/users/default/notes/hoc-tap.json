@@ -1,0 +1,16 @@
+[
+  {
+    "id": "01dcecba-2a5b-491f-9e55-921be50be2c2",
+    "title": "Kế hoạch bảo vệ đồ án",
+    "content": "Chuẩn bị slide 7 trang, tập demo 2 lần và kiểm tra lại file zip trước ngày nộp.",
+    "createdAt": "2026-10-10T11:27:28.664Z",
+    "updatedAt": "2026-10-10T11:27:28.664Z"
+  },
+  {
+    "id": "af29619a-536f-40dc-8edf-bdfb4cbed38b",
+    "title": "Ôn tập React Hooks",
+    "content": "useState, useEffect, useContext, useMemo. Làm lại ví dụ về Context API cho theme sáng/tối.",
+    "createdAt": "2026-10-10T11:27:28.664Z",
+    "updatedAt": "2026-10-10T11:27:28.664Z"
+  }
+]

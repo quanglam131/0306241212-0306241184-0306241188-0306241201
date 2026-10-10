@@ -1,0 +1,73 @@
+﻿Mã TC,Chức năng,Kịch bản,Các bước thực hiện,Kết quả mong đợi,Trạng thái (Pass/Fail/Untested),Ghi chú
+TC-01,Cài đặt,Đổi giao diện sang Tối,"1. Vào Cài đặt
+2. Chọn Giao diện ""Tối""
+3. Bấm Lưu thay đổi","Nền chuyển tối ngay khi chọn; có toast ""Đã lưu cài đặt""; F5 vẫn giữ giao diện tối",Untested,
+TC-02,Cài đặt,Đổi màu chủ đạo,"1. Vào Cài đặt
+2. Chọn một màu khác
+3. Bấm Lưu thay đổi","Nút chính, viền thẻ, mục menu đổi màu ngay; F5 vẫn giữ màu; profile.json có primaryColor mới",Untested,
+TC-03,Cài đặt,Đổi tên hiển thị,"1. Nhập tên mới
+2. Bấm Lưu thay đổi",Tên ở Sidebar đổi theo ngay khi gõ; F5 vẫn giữ tên,Untested,
+TC-04,Cài đặt,Rời trang khi chưa lưu,"1. Đổi theme
+2. Không bấm Lưu, chuyển sang tab Ghi chú",Giao diện trở về giá trị đã lưu,Untested,
+TC-05,Ghi chú thường,Thêm ghi chú hợp lệ,"1. Chọn chủ đề Học tập
+2. Bấm Thêm ghi chú
+3. Nhập tiêu đề và nội dung
+4. Bấm Thêm ghi chú",Có toast thành công; thẻ mới xuất hiện đầu danh sách; số đếm ở Sidebar tăng 1,Untested,
+TC-06,Ghi chú thường,Tạo ghi chú thiếu tiêu đề,"1. Bấm Thêm ghi chú
+2. Bỏ trống tiêu đề
+3. Bấm Thêm ghi chú","Hiện ""Vui lòng nhập tiêu đề""; không gọi API, không tạo ghi chú",Untested,
+TC-07,Ghi chú thường,Tiêu đề toàn dấu cách,"1. Nhập tiêu đề chỉ gồm dấu cách
+2. Bấm Thêm","Bị chặn, báo ""Vui lòng nhập tiêu đề""",Untested,
+TC-08,Ghi chú thường,Xem chi tiết,1. Bấm vào một thẻ ghi chú,"Hiện popup đủ tiêu đề, nội dung, thời gian tạo và cập nhật",Untested,
+TC-09,Ghi chú thường,Sửa ghi chú,"1. Bấm biểu tượng Sửa
+2. Đổi tiêu đề
+3. Lưu thay đổi
+4. F5","Tiêu đề mới được giữ; thời gian cập nhật đổi, thời gian tạo giữ nguyên",Untested,
+TC-10,Ghi chú thường,Xóa ghi chú,"1. Bấm biểu tượng Xóa
+2. Bấm Xóa ghi chú ở popup xác nhận
+3. F5",Ghi chú biến mất vĩnh viễn; bấm Giữ lại thì ghi chú còn nguyên,Untested,
+TC-11,Chủ đề,Chuyển qua lại giữa các chủ đề,"1. Thêm 2 ghi chú ở Học tập
+2. Sang Công việc
+3. Quay lại Học tập","Mỗi chủ đề hiển thị đúng ghi chú của mình, không lẫn dữ liệu",Untested,
+TC-12,Chủ đề,Tạo chủ đề mới,"1. Bấm + ở Sidebar
+2. Nhập ""Du lịch""
+3. Bấm Tạo chủ đề","Chủ đề xuất hiện ở Sidebar, tự chuyển tới chủ đề đó; có file notes/du-lich.json",Untested,
+TC-13,Chủ đề,Tạo chủ đề trùng tên,"1. Tạo chủ đề ""Học tập"" lần nữa","Báo ""Chủ đề này đã tồn tại""",Untested,
+TC-14,Chủ đề,Đổi tên và xóa chủ đề,"1. Bấm Đổi tên, lưu
+2. Bấm Xóa chủ đề, xác nhận","Tên mới hiển thị; sau khi xóa, chủ đề và file ghi chú biến mất",Untested,
+TC-15,Tìm kiếm,Tìm theo từ khóa,1. Gõ từ có trong nội dung một ghi chú,"Danh sách chỉ còn ghi chú khớp (tìm cả tiêu đề lẫn nội dung, mọi chủ đề, kèm nhãn chủ đề)",Untested,
+TC-16,Tìm kiếm,Từ khóa không có kết quả,"1. Gõ ""zzzzqq""","Hiện ""Không có ghi chú nào khớp""; xóa từ khóa thì danh sách trở lại",Untested,
+TC-17,Vùng riêng tư,Đặt mật khẩu lần đầu,"1. Dùng dữ liệu mới (xóa backend/data)
+2. Bấm Vùng riêng tư
+3. Nhập mật khẩu và nhập lại
+4. Bấm Đặt mật khẩu","Vào được vùng riêng tư; profile.json chỉ chứa hash, không có mật khẩu gốc; có private.json",Untested,
+TC-18,Vùng riêng tư,Nhập sai mật khẩu,"1. Bấm Vùng riêng tư
+2. Nhập ""abcde"" (sai)
+3. Bấm Mở khóa","Hiện ""Sai mật khẩu""; không thấy danh sách ghi chú; popup vẫn còn",Untested,
+TC-19,Vùng riêng tư,Nhập đúng mật khẩu,"1. Bấm Vùng riêng tư
+2. Nhập đúng mật khẩu",Popup biến mất; hiện danh sách ghi chú riêng tư,Untested,
+TC-20,Vùng riêng tư,"Thêm, sửa, xóa ghi chú riêng tư","1. Mở khóa
+2. Thêm ghi chú
+3. Sửa
+4. Xóa","Mỗi thao tác thành công có toast; mở private.json chỉ thấy chuỗi mã hóa, không đọc được nội dung",Untested,
+TC-21,Vùng riêng tư,F5 khi đang mở khóa,"1. Mở khóa
+2. Nhấn F5","Ứng dụng khóa lại, hiện popup nhập mật khẩu",Untested,
+TC-22,Vùng riêng tư,Rời tab rồi quay lại,"1. Mở khóa
+2. Sang Ghi chú
+3. Quay lại Vùng riêng tư",Popup nhập mật khẩu hiện lại,Untested,
+TC-23,Vùng riêng tư,Đổi mật khẩu,"1. Vào Cài đặt
+2. Nhập mật khẩu hiện tại, mật khẩu mới (2 lần)
+3. Bấm Đổi mật khẩu
+4. Thử mở bằng mật khẩu cũ, rồi mật khẩu mới",Mật khẩu cũ báo sai; mật khẩu mới mở được; ghi chú riêng tư cũ vẫn còn đủ,Untested,
+TC-24,Vùng riêng tư,Đổi mật khẩu sai mật khẩu cũ,"1. Nhập sai mật khẩu hiện tại
+2. Bấm Đổi mật khẩu","Báo ""Mật khẩu hiện tại không đúng""; mật khẩu không bị đổi",Untested,
+TC-25,Vùng riêng tư,Sai mật khẩu 5 lần liên tiếp,1. Nhập sai 5 lần liên tiếp,Báo tạm khóa kèm số giây chờ; nhập đúng trong thời gian này vẫn bị từ chối,Untested,
+TC-26,Bảo mật,Gọi API riêng tư khi chưa mở khóa,1. Mở http://localhost:5000/api/private/notes trực tiếp trên trình duyệt,"Nhận lỗi 401, không lộ dữ liệu",Untested,
+TC-27,Dữ liệu,Khởi động khi chưa có dữ liệu,"1. Tắt Backend
+2. Xóa thư mục backend/data
+3. Chạy lại Backend và mở web",Không lỗi; dữ liệu mẫu được tạo lại; ứng dụng dùng bình thường,Untested,
+TC-28,Ổn định,Backend chưa chạy,"1. Tắt Backend
+2. Mở web hoặc bấm lưu",Hiện thông báo dễ hiểu và nút Thử lại; không trắng màn hình,Untested,
+TC-29,Giao diện,Responsive trên điện thoại,"1. Bật F12, Toggle Device Toolbar (375px)
+2. Mở menu, thêm ghi chú, mở popup","Menu mở bằng nút ☰; thẻ xếp 1 cột; popup vừa màn hình, không vỡ giao diện",Untested,
+TC-30,Dữ liệu,Nội dung đặc biệt,"1. Thêm ghi chú có tiếng Việt có dấu, ký tự đặc biệt <>&""', xuống dòng nhiều",Hiển thị đúng nguyên văn; xuống dòng được giữ; không lỗi hiển thị,Untested,

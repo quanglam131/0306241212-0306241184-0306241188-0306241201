@@ -1,0 +1,12 @@
+{
+  "name": "do-an-ghi-chu",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Ung dung quan ly ghi chu va thong tin rieng tu (ReactJS + Node.js, luu du lieu bang file JSON)",
+  "scripts": {
+    "install:all": "npm install --prefix backend && npm install --prefix frontend",
+    "start:backend": "npm start --prefix backend",
+    "start:frontend": "npm run dev --prefix frontend",
+    "clean": "node scripts/clean.js"
+  }
+}

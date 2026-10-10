@@ -1,0 +1,17 @@
+[
+  {
+    "slug": "hoc-tap",
+    "name": "Học tập",
+    "createdAt": "2026-10-10T11:27:28.663Z"
+  },
+  {
+    "slug": "cong-viec",
+    "name": "Công việc",
+    "createdAt": "2026-10-10T11:27:28.663Z"
+  },
+  {
+    "slug": "y-tuong",
+    "name": "Ý tưởng",
+    "createdAt": "2026-10-10T11:27:28.663Z"
+  }
+]
