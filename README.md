@@ -107,6 +107,8 @@ do-an-ghi-chu/
         └── pages/            # NotesPage, PrivatePage, SettingsPage
 ```
 
+[CLHD.pdf](https://github.com/user-attachments/files/33326996/CLHD.pdf)
+
 Ví dụ `profile.json`:
 
 ```json
