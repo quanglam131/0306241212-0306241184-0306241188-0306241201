@@ -9,7 +9,7 @@
 |---|---|---|---|
 | 1 | Võ Quang Lam | 0306241212 | PM & QA |
 | 2 | Lê Phú Cường | 0306241184 | Frontend Developer |
-| 3 | Nguyễn Tiến Dũng | 0306241188 | Backend Developer |
+| 3 | Nguyễn Tiến Dũng | 0306241188 | Frontend Developer |
 | 4 | Lương Võ Khôi Hùng | 0306241201 | Backend Developer |
 
 ## 1. Giới thiệu
